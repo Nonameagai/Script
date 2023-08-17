@@ -1,17 +1,4 @@
---[[
-  _______ _____ _____ ______ _____             _____  __  __ _____ _   _ 
- |__   __|_   _/ ____|  ____|  __ \      /\   |  __ \|  \/  |_   _| \ | | PL LITE
-    | |    | || |  __| |__  | |__) |    /  \  | |  | | \  / | | | |  \| |
-    | |    | || | |_ |  __| |  _  /    / /\ \ | |  | | |\/| | | | | . ` |
-    | |   _| || |__| | |____| | \ \   / ____ \| |__| | |  | |_| |_| |\  |
-    |_|  |_____\_____|______|_|  \_\ /_/    \_\_____/|_|  |_|_____|_| \_|     
-    Created by H17S3
-    https://www.youtube.com/watch?v=cL-d_GOXa28
-    if you came here to skid off this, stop right now in the name of the law of america!1!!
-]]
-
 repeat task.wait() until game:IsLoaded() do
---//Instances
 	Debug = false
 	BETA = false
 	Folder = Instance.new("Folder")
