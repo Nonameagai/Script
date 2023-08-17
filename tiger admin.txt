@@ -1,5 +1,17 @@
-repeat task.wait() until game:IsLoaded() do 
---//Instances
+--[[
+  _______ _____ _____ ______ _____             _____  __  __ _____ _   _ 
+ |__   __|_   _/ ____|  ____|  __ \      /\   |  __ \|  \/  |_   _| \ | | PL LITE
+    | |    | || |  __| |__  | |__) |    /  \  | |  | | \  / | | | |  \| |
+    | |    | || | |_ |  __| |  _  /    / /\ \ | |  | | |\/| | | | | . ` |
+    | |   _| || |__| | |____| | \ \   / ____ \| |__| | |  | |_| |_| |\  |
+    |_|  |_____\_____|______|_|  \_\ /_/    \_\_____/|_|  |_|_____|_| \_|     
+    Created by H17S3
+    https://www.youtube.com/watch?v=cL-d_GOXa28
+    if you came here to skid off this, stop right now in the name of the law of america!1!!
+]]
+
+repeat task.wait() until game:IsLoaded()
+do--//Instances
 	Debug = false
 	BETA = false
 	Folder = Instance.new("Folder")
@@ -2386,23 +2398,23 @@ do
 		local Args = GetArgs(Args)
 		local Player = FindPlayer(Args[2])
 		if Player then
-			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("dont kill " Player.name.. , "ALL")
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("!!!A NUKE HAS BEEN PLACED ON "..Player.Name.." KILLING HIM WILL GET EVERYONE DEAD!!!", "ALL")
 			repeat task.wait()
 				if Player.Character and Player.Character:FindFirstChildOfClass("Humanoid") and Player.Character:FindFirstChildOfClass("Humanoid").Health <1 then
 					break
 				end
 			until not game
-			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("you kill me...", "ALL")
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(Player.Name.." IS DEAD NUKE LAUNCHING!!!", "ALL")
 			wait(1.5)
 			--//This is what I call perfect work 
-			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("D", "ALL")
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 3", "ALL")
 			wait(1.5)
-			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I", "ALL")			
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 2", "ALL")			
 			wait(1.5)
-			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("E", "ALL")
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 1", "ALL")
 			wait(2)
 			Kill_All()
-			Notif("command from player has been removed.")
+			Notif("Nuke from player has been removed.")
 		end
 	end,"If player dies everyone dies","PLAYER_COMMAND")
 	Add_Command("antibring",function(Args)
