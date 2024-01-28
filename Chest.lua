@@ -91,14 +91,14 @@ end)
 local AllowRunService = true
 local AllowRunServiceBind = Instance.new("BindableFunction")
 function AllowRunServiceBind.OnInvoke(args)
-    if args == "ON" then
+    if args == "bật" then
         AllowRunService = true
-    elseif args == "OFF" then
+    elseif args == "tắt" then
         AllowRunService = false
     end
     local CoreGui = game:GetService("StarterGui")
     CoreGui:SetCore("SendNotification", {
-        Title = "Chest Farm",
+        Title = "auto beli",
         Text = "bởi Nonameagai ",
         Icon = "rbxthumb://type=Asset&id=15485121479&w=150&h=150",
         Duration = math.huge,
@@ -123,13 +123,13 @@ end)
 
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
-    Title = "Chest Farm",
-    Text = "by thaibao7444",
+    Title = "auto beli",
+    Text = "bởi nonameagai",
     Icon = "rbxthumb://type=Asset&id=15485121479&w=150&h=150",
     Duration = math.huge,
     Callback = AllowRunServiceBind,
-    Button1 = "ON",
-    Button2 = "OFF",
+    Button1 = "bật",
+    Button2 = "tắt",
 })
 task.spawn(function()
     while true and task.wait(.5) do
