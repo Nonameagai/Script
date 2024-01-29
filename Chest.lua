@@ -1,7 +1,7 @@
 
 highChestOnly = true
 godsChalicSniper = false
-repeat task.wait(1.5) until game:IsLoaded()
+repeat task.wait(2.3) until game:IsLoaded()
 local PlaceID = game.PlaceId
 local AllIDs = {}
 local foundAnything = ""
@@ -54,7 +54,7 @@ function TPReturner()
                     wait()
                     game:GetService("TeleportService"):TeleportToPlaceInstance(PlaceID, ID, game.Players.LocalPlayer)
                 end)
-                wait(1.3)
+                wait(3.6)
             end
         end
     end
